@@ -30,8 +30,14 @@
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
               }
+              ,
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images",
+                "output": "assets/leaflet/images"
+              }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
+            "styles": ["src/global.scss", "src/theme/variables.scss", "node_modules/leaflet/dist/leaflet.css"],
             "scripts": []
           },
           "configurations": {
@@ -112,11 +118,11 @@
               },
               {
                 "glob": "**/*",
-                "input": "node modules/leaflet/dist/images",
+                "input": "node_modules/leaflet/dist/images",
                 "output": "assets/leaflet/images"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss", "node modules/leaflet/dist/leaflet.css"],
+            "styles": ["src/global.scss", "src/theme/variables.scss", "node_modules/leaflet/dist/leaflet.css"],
             "scripts": []
           },
           "configurations": {
